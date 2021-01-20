@@ -13,8 +13,8 @@ namespace WpfToDo
         #endregion
 
         #region Attributes
-        private ObservableCollection<Name> tasks;
-        public ObservableCollection<Name> Tasks
+        private ObservableCollection<TodoTask> tasks;
+        public ObservableCollection<TodoTask> Tasks
         {
             get { return tasks; }
             set
@@ -27,8 +27,8 @@ namespace WpfToDo
             }
         }
 
-        private Name selectedTask;
-        public Name SelectedTask
+        private TodoTask selectedTask;
+        public TodoTask SelectedTask
         {
             get { return selectedTask; }
             set
@@ -47,7 +47,7 @@ namespace WpfToDo
         {
             InitializeComponent();
 
-            Tasks = new ObservableCollection<Name>();
+            Tasks = new ObservableCollection<TodoTask>();
             SelectedTask = null;
             DataContext = this;
             deserializeTasks();
@@ -125,7 +125,7 @@ namespace WpfToDo
                 try
                 {
                     stream = File.Open(fileName, FileMode.Open);
-                    Tasks = (ObservableCollection<Name>)formatter.Deserialize(stream);
+                    Tasks = (ObservableCollection<TodoTask>)formatter.Deserialize(stream);
                 }
                 catch
                 {
