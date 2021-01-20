@@ -1,4 +1,4 @@
-﻿using System.Collections.ObjectModel;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -13,8 +13,8 @@ namespace WpfToDo
         #endregion
 
         #region Attributes
-        private ObservableCollection<Task> tasks;
-        public ObservableCollection<Task> Tasks
+        private ObservableCollection<Name> tasks;
+        public ObservableCollection<Name> Tasks
         {
             get { return tasks; }
             set
@@ -27,8 +27,8 @@ namespace WpfToDo
             }
         }
 
-        private Task selectedTask;
-        public Task SelectedTask
+        private Name selectedTask;
+        public Name SelectedTask
         {
             get { return selectedTask; }
             set
@@ -46,7 +46,8 @@ namespace WpfToDo
         public MainWindow()
         {
             InitializeComponent();
-            Tasks = new ObservableCollection<Task>();
+
+            Tasks = new ObservableCollection<Name>();
             SelectedTask = null;
             DataContext = this;
             deserializeTasks();
@@ -124,7 +125,7 @@ namespace WpfToDo
                 try
                 {
                     stream = File.Open(fileName, FileMode.Open);
-                    Tasks = (ObservableCollection<Task>)formatter.Deserialize(stream);
+                    Tasks = (ObservableCollection<Name>)formatter.Deserialize(stream);
                 }
                 catch
                 {
