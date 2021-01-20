@@ -9,9 +9,8 @@ namespace WpfToDo
     [Serializable]
     public class TodoTask
     {
-        public string task { get; set; }
+        public string Name { get; set; }
         public DateTime DueDate { get; set; }
-        public bool isComplete { get; set; }
- 
+        public bool IsCompleted { get; set; }
     }
 }
