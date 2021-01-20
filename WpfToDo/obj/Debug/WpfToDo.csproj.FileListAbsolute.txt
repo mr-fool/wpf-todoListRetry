@@ -1,0 +1,15 @@
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\bin\Debug\WpfToDo.exe.config
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\bin\Debug\WpfToDo.exe
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\bin\Debug\WpfToDo.pdb
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\WpfToDo.csprojAssemblyReference.cache
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\MainWindow.g.cs
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\App.g.cs
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\WpfToDo_MarkupCompile.cache
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\WpfToDo_MarkupCompile.lref
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\MainWindow.baml
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\WpfToDo.g.resources
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\WpfToDo.Properties.Resources.resources
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\WpfToDo.csproj.GenerateResource.cache
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\WpfToDo.csproj.CoreCompileInputs.cache
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\WpfToDo.exe
+C:\Users\hetzer\Desktop\todo-list-wpf-master\WpfToDo\obj\Debug\WpfToDo.pdb
