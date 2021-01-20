@@ -10,13 +10,8 @@ namespace WpfToDo
     public class TodoTask
     {
         public string task { get; set; }
-        public string DueDate { get; set; }
+        public DateTime DueDate { get; set; }
         public bool isComplete { get; set; }
-        public TodoTask(string taskText, string dueDate, bool isDone)
-        {
-            task = taskText;
-            DueDate = dueDate;
-            isComplete = isDone;
-        }
+ 
     }
 }
