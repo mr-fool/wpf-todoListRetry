@@ -57,7 +57,13 @@ namespace WpfToDo
         #region Event Handling
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            Tasks.Add(new Task(textBox.Text));
+            //Tasks.Add(new Task(textBox.Text));
+            Tasks.Add(new TodoTask()
+            {
+                Name = textBox.Text,
+                DueDate = dueDate.SelectedDate.Value,
+                IsCompleted = false
+            } );
             serializeTasks();
         }
 
@@ -68,7 +74,7 @@ namespace WpfToDo
                 int index = -1;
                 for (int i = 0; i < Tasks.Count; i++)
                 {
-                    if (Tasks[i].task.Equals(SelectedTask.task))
+                    if (Tasks[i].Name.Equals(SelectedTask.Name))
                     {
                         index = i;
                     }
@@ -76,7 +82,7 @@ namespace WpfToDo
                 if (index != -1)
                 {
                     Tasks.RemoveAt(index);
-                    OnPropertyChanged("Tasks");
+                    //OnPropertyChanged("Tasks");
                 }
             }
         }
